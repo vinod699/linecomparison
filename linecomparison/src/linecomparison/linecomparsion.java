@@ -1,6 +1,7 @@
+package linecomparison;
 import java.util.Scanner;
 
-public class lineComparsion {
+public class linecomparsion {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
