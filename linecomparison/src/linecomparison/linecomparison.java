@@ -1,8 +1,9 @@
 package linecomparison;
+
 import java.util.Scanner;
 
 
-public class linecomparsion {
+public class linecomparison {
 	
 	public static void main(String args[]) {
 	
@@ -26,12 +27,26 @@ public class linecomparsion {
 		
 		double Lenght2 = Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));
 		System.out.println("Length of Line2 : "+Lenght2) ;
+			
+		String Length_Line1 = String.valueOf(Lenght1);
+		String Length_Line2 = String.valueOf(Lenght2);
 		
-		if(Double.compare(Lenght1,Lenght2)==0)
-		
-			System.out.println("Length of Line 1 = Lenght of Line 2");
+		int comparision=Length_Line1.compareTo(Length_Line2);
+		System.out.println("Comparision of Line1 & Line2 = " +comparision);
+		if(comparision==0)
+		{
+			System.out.println("Lenght of Line1 "+Lenght1+" is equal to Lenght of Line2 "+Lenght2 );
+		}
+		else if(comparision<0)
+		{
+			System.out.println("Lenght of Line1 "+Lenght1+" is less than Lenght of Line2 "+Lenght2 );
+		}
 		else
-			System.out.println("Length of Line 1 != Lenght of Line 2");
+		{
+			System.out.println("Lenght of Line1 = "+Lenght1+" is greater than Lenght of Line2 = "+Lenght2 );
+		}
+		
+		
 	}
 		
 }
