@@ -1,11 +1,14 @@
 package linecomparison;
-public class lineComparsion {
+import java.util.Scanner;
+
+
+public class linecomparsion {
 	
 	public static void main(String args[]) {
 	
 		// variables
 		double x1, y1, x2, y2; 
-		Scanner in = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter co-ordinates of First Line : ");
 		x1=sc.nextDouble();
 		y1=sc.nextDouble();
@@ -27,10 +30,8 @@ public class lineComparsion {
 		if(Double.compare(Lenght1,Lenght2)==0)
 		
 			System.out.println("Length of Line 1 = Lenght of Line 2");
-		else if(Double.compare(Lenght1,Lenght2)<0)
-			System.out.println("Length of Line 1 < Lenght of Line 2");
 		else
-			System.out.println("Length of Line 1 > Lenght of Line 2");
+			System.out.println("Length of Line 1 != Lenght of Line 2");
 	}
 		
 }
